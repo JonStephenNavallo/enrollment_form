@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Enrollment Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Student Enrollment Form</h1>
+    <form action="#" method="POST">
+
+      <div class="instructions">
+        <h3>Instructions:</h3>
+        <br>
+        <p>1. Fill in the form fields. <br> 2. Check your interest. <br> 3. Click "Enroll Now" to submit.</p>
+      </div>
+      <br>
+
+      <div class="groups">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="groups">
+        <br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+
+      <div class="groups">
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" min="1" required>
+      </div>
+
+ 
+      <div class="groups">
+        <br>
+        <label>Sex:</label>
+        <div class="radio-group">
+          <div class="radio-item">
+            <input type="radio" id="male" name="sex" value="Male" required>
+            <label for="male">Male</label>
+          </div>
+          <div class="radio-item">
+            <input type="radio" id="female" name="sex" value="Female">
+            <label for="female">Female</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="groups">
+        <br>
+        <label>Interests:</label>
+        <div class="checkbox-group">
+          <div class="checkbox-item">
+            <input type="checkbox" id="web-dev" name="interests" value="Web Development">
+            <label for="web-dev">Web Development</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="data-science" name="interests" value="Data Science">
+            <label for="data-science">Data Science</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="networking" name="interests" value="Networking">
+            <label for="networking">Networking</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="graphic-design" name="interests" value="Graphic Design">
+            <label for="graphic-design">Graphic Design</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="groups">
+        <br>
+        <button type="submit" class="submit-btn">Enroll Now</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Student Table -->
+  <div class="table-container">
+    <h2>Enrolled Students</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>Sex</th>
+          <th>Course</th>
+          <th>Interests</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dummy Data -->
+        <tr>
+          <td>1</td>
+          <td>Jon Stephen P. Navallo</td>
+          <td>jonstephen09@gmailcom.com</td>
+          <td>20</td>
+          <td>Male</td>
+          <td>BSIT</td>
+          <td>Web Development, Networking</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Chelo L. Macatangay</td>
+          <td>chelo10@gmail.com</td>
+          <td>20</td>
+          <td>Female</td>
+          <td>BSIT</td>
+          <td>Web Development</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Jaynard Diosay</td>
+          <td>jaynarddiosay@yahoo.com</td>
+          <td>21</td>
+          <td>Male</td>
+          <td>BSIT</td>
+          <td>Graphic Design</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Anne Fedelino</td>
+            <td>fedelinoannne@yahoo.com</td>
+            <td>20</td>
+            <td>Female</td>
+            <td>BSIT</td>
+            <td>Web Development</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Alyssa Sophia Ramos</td>
+            <td>alyssaramos@yahoo.com</td>
+            <td>20</td>
+            <td>Female</td>
+            <td>BSIT</td>
+            <td>Web Development, Graphic Design</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
